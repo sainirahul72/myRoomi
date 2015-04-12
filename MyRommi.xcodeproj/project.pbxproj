@@ -1,0 +1,569 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B74102E91ADA47A800711ADE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B74102E81ADA47A800711ADE /* main.m */; };
+		B74102EC1ADA47A800711ADE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B74102EB1ADA47A800711ADE /* AppDelegate.m */; };
+		B74102EF1ADA47A800711ADE /* MyRommi.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B74102ED1ADA47A800711ADE /* MyRommi.xcdatamodeld */; };
+		B74102F51ADA47A800711ADE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B74102F31ADA47A800711ADE /* Main.storyboard */; };
+		B74102F71ADA47A800711ADE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B74102F61ADA47A800711ADE /* Images.xcassets */; };
+		B74102FA1ADA47A800711ADE /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B74102F81ADA47A800711ADE /* LaunchScreen.xib */; };
+		B74103061ADA47A900711ADE /* MyRommiTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B74103051ADA47A900711ADE /* MyRommiTests.m */; };
+		B741035F1ADA50BF00711ADE /* PropertyDescription.m in Sources */ = {isa = PBXBuildFile; fileRef = B741035E1ADA50BF00711ADE /* PropertyDescription.m */; };
+		B74103621ADA51E900711ADE /* RoomDescription.m in Sources */ = {isa = PBXBuildFile; fileRef = B74103611ADA51E900711ADE /* RoomDescription.m */; };
+		B74103651ADA52D900711ADE /* PropertyLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = B74103641ADA52D900711ADE /* PropertyLocation.m */; };
+		B74103681ADA554600711ADE /* AddProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = B74103671ADA554600711ADE /* AddProperty.m */; };
+		B741036B1ADA557900711ADE /* PropertyAddress.m in Sources */ = {isa = PBXBuildFile; fileRef = B741036A1ADA557900711ADE /* PropertyAddress.m */; };
+		B741036E1ADA55BE00711ADE /* PropertyPreferences.m in Sources */ = {isa = PBXBuildFile; fileRef = B741036D1ADA55BE00711ADE /* PropertyPreferences.m */; };
+		B74103721ADA687200711ADE /* PropertyTypeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B74103711ADA687200711ADE /* PropertyTypeCell.m */; };
+		B741037C1ADA6ACF00711ADE /* cell_arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = B74103741ADA6ACF00711ADE /* cell_arrow.png */; };
+		B741037D1ADA6ACF00711ADE /* cell_arrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B74103751ADA6ACF00711ADE /* cell_arrow@2x.png */; };
+		B741037E1ADA6ACF00711ADE /* MB_Right_Arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = B74103761ADA6ACF00711ADE /* MB_Right_Arrow.png */; };
+		B741037F1ADA6ACF00711ADE /* MB_Right_Arrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B74103771ADA6ACF00711ADE /* MB_Right_Arrow@2x.png */; };
+		B74103801ADA6ACF00711ADE /* right_arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = B74103781ADA6ACF00711ADE /* right_arrow.png */; };
+		B74103811ADA6ACF00711ADE /* right_arrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B74103791ADA6ACF00711ADE /* right_arrow@2x.png */; };
+		B74103821ADA6ACF00711ADE /* rightSlideArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = B741037A1ADA6ACF00711ADE /* rightSlideArrow.png */; };
+		B74103831ADA6ACF00711ADE /* rightSlideArrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B741037B1ADA6ACF00711ADE /* rightSlideArrow@2x.png */; };
+		B74103861ADA6C4000711ADE /* city_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = B74103841ADA6C4000711ADE /* city_icon.png */; };
+		B74103871ADA6C4000711ADE /* city_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B74103851ADA6C4000711ADE /* city_icon@2x.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B74103001ADA47A900711ADE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B74102DB1ADA47A800711ADE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B74102E21ADA47A800711ADE;
+			remoteInfo = MyRommi;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B74102E31ADA47A800711ADE /* MyRommi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyRommi.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B74102E71ADA47A800711ADE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B74102E81ADA47A800711ADE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B74102EA1ADA47A800711ADE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		B74102EB1ADA47A800711ADE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		B74102EE1ADA47A800711ADE /* MyRommi.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MyRommi.xcdatamodel; sourceTree = "<group>"; };
+		B74102F41ADA47A800711ADE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B74102F61ADA47A800711ADE /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		B74102F91ADA47A800711ADE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		B74102FF1ADA47A900711ADE /* MyRommiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyRommiTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B74103041ADA47A900711ADE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B74103051ADA47A900711ADE /* MyRommiTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyRommiTests.m; sourceTree = "<group>"; };
+		B741035D1ADA50BF00711ADE /* PropertyDescription.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PropertyDescription.h; path = UI/PropertyDescription.h; sourceTree = "<group>"; };
+		B741035E1ADA50BF00711ADE /* PropertyDescription.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PropertyDescription.m; path = UI/PropertyDescription.m; sourceTree = "<group>"; };
+		B74103601ADA51E900711ADE /* RoomDescription.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RoomDescription.h; path = UI/RoomDescription.h; sourceTree = "<group>"; };
+		B74103611ADA51E900711ADE /* RoomDescription.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RoomDescription.m; path = UI/RoomDescription.m; sourceTree = "<group>"; };
+		B74103631ADA52D900711ADE /* PropertyLocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PropertyLocation.h; path = UI/PropertyLocation.h; sourceTree = "<group>"; };
+		B74103641ADA52D900711ADE /* PropertyLocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PropertyLocation.m; path = UI/PropertyLocation.m; sourceTree = "<group>"; };
+		B74103661ADA554600711ADE /* AddProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AddProperty.h; path = UI/AddProperty.h; sourceTree = "<group>"; };
+		B74103671ADA554600711ADE /* AddProperty.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AddProperty.m; path = UI/AddProperty.m; sourceTree = "<group>"; };
+		B74103691ADA557900711ADE /* PropertyAddress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PropertyAddress.h; path = UI/PropertyAddress.h; sourceTree = "<group>"; };
+		B741036A1ADA557900711ADE /* PropertyAddress.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PropertyAddress.m; path = UI/PropertyAddress.m; sourceTree = "<group>"; };
+		B741036C1ADA55BE00711ADE /* PropertyPreferences.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PropertyPreferences.h; path = UI/PropertyPreferences.h; sourceTree = "<group>"; };
+		B741036D1ADA55BE00711ADE /* PropertyPreferences.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PropertyPreferences.m; path = UI/PropertyPreferences.m; sourceTree = "<group>"; };
+		B74103701ADA687200711ADE /* PropertyTypeCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PropertyTypeCell.h; path = UI/PropertyTypeCell.h; sourceTree = "<group>"; };
+		B74103711ADA687200711ADE /* PropertyTypeCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PropertyTypeCell.m; path = UI/PropertyTypeCell.m; sourceTree = "<group>"; };
+		B74103741ADA6ACF00711ADE /* cell_arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cell_arrow.png; sourceTree = "<group>"; };
+		B74103751ADA6ACF00711ADE /* cell_arrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cell_arrow@2x.png"; sourceTree = "<group>"; };
+		B74103761ADA6ACF00711ADE /* MB_Right_Arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MB_Right_Arrow.png; sourceTree = "<group>"; };
+		B74103771ADA6ACF00711ADE /* MB_Right_Arrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MB_Right_Arrow@2x.png"; sourceTree = "<group>"; };
+		B74103781ADA6ACF00711ADE /* right_arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = right_arrow.png; sourceTree = "<group>"; };
+		B74103791ADA6ACF00711ADE /* right_arrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "right_arrow@2x.png"; sourceTree = "<group>"; };
+		B741037A1ADA6ACF00711ADE /* rightSlideArrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rightSlideArrow.png; sourceTree = "<group>"; };
+		B741037B1ADA6ACF00711ADE /* rightSlideArrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "rightSlideArrow@2x.png"; sourceTree = "<group>"; };
+		B74103841ADA6C4000711ADE /* city_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = city_icon.png; sourceTree = "<group>"; };
+		B74103851ADA6C4000711ADE /* city_icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "city_icon@2x.png"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B74102E01ADA47A800711ADE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B74102FC1ADA47A900711ADE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B74102DA1ADA47A800711ADE = {
+			isa = PBXGroup;
+			children = (
+				B74102E51ADA47A800711ADE /* MyRommi */,
+				B74103021ADA47A900711ADE /* MyRommiTests */,
+				B74102E41ADA47A800711ADE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B74102E41ADA47A800711ADE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B74102E31ADA47A800711ADE /* MyRommi.app */,
+				B74102FF1ADA47A900711ADE /* MyRommiTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B74102E51ADA47A800711ADE /* MyRommi */ = {
+			isa = PBXGroup;
+			children = (
+				B741034F1ADA4E1E00711ADE /* UI */,
+				B741034E1ADA4E1600711ADE /* Data */,
+				B741032E1ADA4BCE00711ADE /* Server */,
+				B74102EA1ADA47A800711ADE /* AppDelegate.h */,
+				B74102EB1ADA47A800711ADE /* AppDelegate.m */,
+				B74102F31ADA47A800711ADE /* Main.storyboard */,
+				B74102F61ADA47A800711ADE /* Images.xcassets */,
+				B74102F81ADA47A800711ADE /* LaunchScreen.xib */,
+				B74102ED1ADA47A800711ADE /* MyRommi.xcdatamodeld */,
+				B74102E61ADA47A800711ADE /* Supporting Files */,
+			);
+			path = MyRommi;
+			sourceTree = "<group>";
+		};
+		B74102E61ADA47A800711ADE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B74103731ADA6ABD00711ADE /* Assets */,
+				B74102E71ADA47A800711ADE /* Info.plist */,
+				B74102E81ADA47A800711ADE /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B74103021ADA47A900711ADE /* MyRommiTests */ = {
+			isa = PBXGroup;
+			children = (
+				B74103051ADA47A900711ADE /* MyRommiTests.m */,
+				B74103031ADA47A900711ADE /* Supporting Files */,
+			);
+			path = MyRommiTests;
+			sourceTree = "<group>";
+		};
+		B74103031ADA47A900711ADE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B74103041ADA47A900711ADE /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B741032E1ADA4BCE00711ADE /* Server */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Server;
+			sourceTree = "<group>";
+		};
+		B741034E1ADA4E1600711ADE /* Data */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Data;
+			sourceTree = "<group>";
+		};
+		B741034F1ADA4E1E00711ADE /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				B741035D1ADA50BF00711ADE /* PropertyDescription.h */,
+				B741035E1ADA50BF00711ADE /* PropertyDescription.m */,
+				B74103601ADA51E900711ADE /* RoomDescription.h */,
+				B74103611ADA51E900711ADE /* RoomDescription.m */,
+				B74103631ADA52D900711ADE /* PropertyLocation.h */,
+				B74103641ADA52D900711ADE /* PropertyLocation.m */,
+				B74103661ADA554600711ADE /* AddProperty.h */,
+				B74103671ADA554600711ADE /* AddProperty.m */,
+				B74103691ADA557900711ADE /* PropertyAddress.h */,
+				B741036A1ADA557900711ADE /* PropertyAddress.m */,
+				B741036C1ADA55BE00711ADE /* PropertyPreferences.h */,
+				B741036D1ADA55BE00711ADE /* PropertyPreferences.m */,
+				B74103701ADA687200711ADE /* PropertyTypeCell.h */,
+				B74103711ADA687200711ADE /* PropertyTypeCell.m */,
+			);
+			name = UI;
+			sourceTree = "<group>";
+		};
+		B74103731ADA6ABD00711ADE /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				B74103841ADA6C4000711ADE /* city_icon.png */,
+				B74103851ADA6C4000711ADE /* city_icon@2x.png */,
+				B74103741ADA6ACF00711ADE /* cell_arrow.png */,
+				B74103751ADA6ACF00711ADE /* cell_arrow@2x.png */,
+				B74103761ADA6ACF00711ADE /* MB_Right_Arrow.png */,
+				B74103771ADA6ACF00711ADE /* MB_Right_Arrow@2x.png */,
+				B74103781ADA6ACF00711ADE /* right_arrow.png */,
+				B74103791ADA6ACF00711ADE /* right_arrow@2x.png */,
+				B741037A1ADA6ACF00711ADE /* rightSlideArrow.png */,
+				B741037B1ADA6ACF00711ADE /* rightSlideArrow@2x.png */,
+			);
+			name = Assets;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B74102E21ADA47A800711ADE /* MyRommi */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B74103091ADA47A900711ADE /* Build configuration list for PBXNativeTarget "MyRommi" */;
+			buildPhases = (
+				B74102DF1ADA47A800711ADE /* Sources */,
+				B74102E01ADA47A800711ADE /* Frameworks */,
+				B74102E11ADA47A800711ADE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MyRommi;
+			productName = MyRommi;
+			productReference = B74102E31ADA47A800711ADE /* MyRommi.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B74102FE1ADA47A900711ADE /* MyRommiTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B741030C1ADA47A900711ADE /* Build configuration list for PBXNativeTarget "MyRommiTests" */;
+			buildPhases = (
+				B74102FB1ADA47A900711ADE /* Sources */,
+				B74102FC1ADA47A900711ADE /* Frameworks */,
+				B74102FD1ADA47A900711ADE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B74103011ADA47A900711ADE /* PBXTargetDependency */,
+			);
+			name = MyRommiTests;
+			productName = MyRommiTests;
+			productReference = B74102FF1ADA47A900711ADE /* MyRommiTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B74102DB1ADA47A800711ADE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "Rahul Saini";
+				TargetAttributes = {
+					B74102E21ADA47A800711ADE = {
+						CreatedOnToolsVersion = 6.1.1;
+						DevelopmentTeam = 7SF446X89V;
+					};
+					B74102FE1ADA47A900711ADE = {
+						CreatedOnToolsVersion = 6.1.1;
+						TestTargetID = B74102E21ADA47A800711ADE;
+					};
+				};
+			};
+			buildConfigurationList = B74102DE1ADA47A800711ADE /* Build configuration list for PBXProject "MyRommi" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B74102DA1ADA47A800711ADE;
+			productRefGroup = B74102E41ADA47A800711ADE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B74102E21ADA47A800711ADE /* MyRommi */,
+				B74102FE1ADA47A900711ADE /* MyRommiTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B74102E11ADA47A800711ADE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B74103821ADA6ACF00711ADE /* rightSlideArrow.png in Resources */,
+				B74103871ADA6C4000711ADE /* city_icon@2x.png in Resources */,
+				B74103861ADA6C4000711ADE /* city_icon.png in Resources */,
+				B74102F51ADA47A800711ADE /* Main.storyboard in Resources */,
+				B74103831ADA6ACF00711ADE /* rightSlideArrow@2x.png in Resources */,
+				B74102FA1ADA47A800711ADE /* LaunchScreen.xib in Resources */,
+				B74103801ADA6ACF00711ADE /* right_arrow.png in Resources */,
+				B741037D1ADA6ACF00711ADE /* cell_arrow@2x.png in Resources */,
+				B741037F1ADA6ACF00711ADE /* MB_Right_Arrow@2x.png in Resources */,
+				B74103811ADA6ACF00711ADE /* right_arrow@2x.png in Resources */,
+				B741037E1ADA6ACF00711ADE /* MB_Right_Arrow.png in Resources */,
+				B74102F71ADA47A800711ADE /* Images.xcassets in Resources */,
+				B741037C1ADA6ACF00711ADE /* cell_arrow.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B74102FD1ADA47A900711ADE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B74102DF1ADA47A800711ADE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B741036B1ADA557900711ADE /* PropertyAddress.m in Sources */,
+				B74102EF1ADA47A800711ADE /* MyRommi.xcdatamodeld in Sources */,
+				B741035F1ADA50BF00711ADE /* PropertyDescription.m in Sources */,
+				B74102EC1ADA47A800711ADE /* AppDelegate.m in Sources */,
+				B74103721ADA687200711ADE /* PropertyTypeCell.m in Sources */,
+				B74103651ADA52D900711ADE /* PropertyLocation.m in Sources */,
+				B741036E1ADA55BE00711ADE /* PropertyPreferences.m in Sources */,
+				B74103621ADA51E900711ADE /* RoomDescription.m in Sources */,
+				B74103681ADA554600711ADE /* AddProperty.m in Sources */,
+				B74102E91ADA47A800711ADE /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B74102FB1ADA47A900711ADE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B74103061ADA47A900711ADE /* MyRommiTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B74103011ADA47A900711ADE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B74102E21ADA47A800711ADE /* MyRommi */;
+			targetProxy = B74103001ADA47A900711ADE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B74102F31ADA47A800711ADE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B74102F41ADA47A800711ADE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B74102F81ADA47A800711ADE /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B74102F91ADA47A800711ADE /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B74103071ADA47A900711ADE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: JATIN MALHOTRA (7GPYG5ZDT5)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: JATIN MALHOTRA (7GPYG5ZDT5)";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "662e4943-ac97-4e45-b8e1-a8cd3cde12e3";
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		B74103081ADA47A900711ADE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: JATIN MALHOTRA (7GPYG5ZDT5)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: JATIN MALHOTRA (7GPYG5ZDT5)";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PROVISIONING_PROFILE = "662e4943-ac97-4e45-b8e1-a8cd3cde12e3";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B741030A1ADA47A900711ADE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = MyRommi/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Debug;
+		};
+		B741030B1ADA47A900711ADE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = MyRommi/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Release;
+		};
+		B741030D1ADA47A900711ADE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = MyRommiTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MyRommi.app/MyRommi";
+			};
+			name = Debug;
+		};
+		B741030E1ADA47A900711ADE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = MyRommiTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MyRommi.app/MyRommi";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B74102DE1ADA47A800711ADE /* Build configuration list for PBXProject "MyRommi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B74103071ADA47A900711ADE /* Debug */,
+				B74103081ADA47A900711ADE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B74103091ADA47A900711ADE /* Build configuration list for PBXNativeTarget "MyRommi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B741030A1ADA47A900711ADE /* Debug */,
+				B741030B1ADA47A900711ADE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B741030C1ADA47A900711ADE /* Build configuration list for PBXNativeTarget "MyRommiTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B741030D1ADA47A900711ADE /* Debug */,
+				B741030E1ADA47A900711ADE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		B74102ED1ADA47A800711ADE /* MyRommi.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				B74102EE1ADA47A800711ADE /* MyRommi.xcdatamodel */,
+			);
+			currentVersion = B74102EE1ADA47A800711ADE /* MyRommi.xcdatamodel */;
+			path = MyRommi.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = B74102DB1ADA47A800711ADE /* Project object */;
+}
