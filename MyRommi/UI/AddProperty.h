@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface AddProperty : UITableViewController<UITableViewDataSource,UITableViewDelegate>
+@interface AddProperty : UIViewController <UITableViewDataSource,UITableViewDelegate>
 @property (strong, nonatomic) IBOutlet UITableView *tableView;
 @end

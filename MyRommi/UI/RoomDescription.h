@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface RoomDescription : UITableViewController
+@interface RoomDescription : UIViewController
 
 @end
