@@ -88,6 +88,13 @@
         propertyAddressVC.propertyType = self.propertyType[indexPath.row];
     }
 }
+/*
+ NSArray *options =[[NSArray alloc]initWithObjects:@"1",@"2",@"3",@"4",@"5",@"6",nil];
+	MIRadioButtonGroup *group =[[MIRadioButtonGroup alloc]initWithFrame:CGRectMake(0, 20, 320, 75) andOptions:options andColumns:4];
+ //[group setSelected:1];
+	//[group clearAll];
+	//[group removeButtonAtIndex:2];
+ */
 
 
 @end
