@@ -9,13 +9,29 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "MyRommi/UI/AddProperty.m"
-            timestampString = "450674948.184523"
+            filePath = "MyRommi/MIRadioButtonGroup.m"
+            timestampString = "450799134.300304"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "75"
-            endingLineNumber = "75"
-            landmarkName = "-tableView:didSelectRowAtIndexPath:"
+            startingLineNumber = "93"
+            endingLineNumber = "93"
+            landmarkName = "-setSelected:"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MyRommi/MIRadioButtonGroup.m"
+            timestampString = "450799255.599699"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "78"
+            endingLineNumber = "78"
+            landmarkName = "-radioButtonClicked:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
