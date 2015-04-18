@@ -20,5 +20,4 @@
 -(void) removeButtonAtIndex:(int)index;
 -(void) setSelected:(int) index;
 -(void)clearAll;
--(NSInteger) getSelected;
 @end
