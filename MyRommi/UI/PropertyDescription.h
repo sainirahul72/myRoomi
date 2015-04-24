@@ -9,5 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface PropertyDescription : UIViewController
-
+@property (strong, nonatomic) IBOutlet UIButton *male;
+@property (strong, nonatomic) IBOutlet UIButton *female;
+@property (strong, nonatomic) IBOutlet UIButton *any;
 @end

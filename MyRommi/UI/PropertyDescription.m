@@ -24,6 +24,33 @@
     // Dispose of any resources that can be recreated.
 }
 
+
+-(IBAction)Button_Selection:(id)sender
+{
+    switch ([sender tag]) {
+        case 1:
+            [self.male setSelected:YES];
+            [self.any setSelected:NO];
+            [self.female setSelected:NO];
+            break;
+        case 2:
+            [self.male setSelected:NO];
+            [self.any setSelected:NO];
+            [self.female setSelected:YES];
+            break;
+        case 3:
+            [self.male setSelected:NO];
+            [self.any setSelected:YES];
+            [self.female setSelected:NO];
+            break;
+
+        default:
+            break;
+    }
+}
+
+
+
 /*
 #pragma mark - Navigation
 

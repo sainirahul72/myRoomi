@@ -12,16 +12,102 @@
                     <view key="view" contentMode="scaleToFill" id="QEF-yw-ovI">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" id="cDf-no-Kbk">
+                                <rect key="frame" x="0.0" y="70" width="320" height="90"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gender" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="6s8-7C-BFA">
+                                        <rect key="frame" x="20" y="10" width="70" height="20"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view contentMode="scaleToFill" id="ohn-Ap-ETB">
+                                        <rect key="frame" x="0.0" y="30" width="320" height="60"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Male" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Gph-ge-uk0">
+                                                <rect key="frame" x="62" y="2" width="70" height="20"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Female" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="TS8-ZS-D6F">
+                                                <rect key="frame" x="230" y="4" width="70" height="20"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Any" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="1tj-kd-At8">
+                                                <rect key="frame" x="62" y="34" width="70" height="20"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="sLx-NW-uIT">
+                                                <rect key="frame" x="27" y="1" width="24" height="24"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" image="radio-off.png">
+                                                    <color key="titleColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                    <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <state key="selected" image="radio-on.png"/>
+                                                <state key="highlighted" image="radio-on.png"/>
+                                                <connections>
+                                                    <action selector="Button_Selection:" destination="yuJ-nB-9Gt" eventType="touchUpInside" id="7xK-BD-fZk"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="t0V-0z-d2b">
+                                                <rect key="frame" x="202" y="1" width="24" height="24"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" image="radio-off.png">
+                                                    <color key="titleColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                    <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <state key="selected" image="radio-on.png"/>
+                                                <state key="highlighted" image="radio-on.png"/>
+                                                <connections>
+                                                    <action selector="Button_Selection:" destination="yuJ-nB-9Gt" eventType="touchUpInside" id="6HC-Za-OCp"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="3JI-R0-ZIh">
+                                                <rect key="frame" x="27" y="32" width="24" height="24"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <inset key="contentEdgeInsets" minX="0.0" minY="0.0" maxX="3" maxY="0.0"/>
+                                                <state key="normal" image="radio-off.png">
+                                                    <color key="titleColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                    <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <state key="selected" image="radio-on.png"/>
+                                                <state key="highlighted" image="radio-on.png"/>
+                                                <connections>
+                                                    <action selector="Button_Selection:" destination="yuJ-nB-9Gt" eventType="touchUpInside" id="bvN-RM-Jjz"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </view>
+                                </subviews>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="avU-j8-eQb"/>
                     <connections>
+                        <outlet property="any" destination="3JI-R0-ZIh" id="Tif-o0-UvN"/>
+                        <outlet property="female" destination="t0V-0z-d2b" id="2bH-hk-nys"/>
+                        <outlet property="male" destination="sLx-NW-uIT" id="5Gt-1a-9fG"/>
                         <segue destination="HgC-eI-voN" kind="push" identifier="roomDescription" id="tUx-2O-oOq"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xU0-mp-Dks" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="703" y="248"/>
+            <point key="canvasLocation" x="769" y="243"/>
         </scene>
         <!--Room Description-->
         <scene sceneID="KkP-Ko-wIH">
@@ -65,8 +151,8 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" id="c3e-oE-dVk">
-                                <rect key="frame" x="0.0" y="64" width="320" height="90"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <rect key="frame" x="0.0" y="65" width="960" height="90"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gender" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="4Lj-dt-EW0">
                                         <rect key="frame" x="20" y="10" width="70" height="20"/>
@@ -79,18 +165,6 @@
                                         <rect key="frame" x="0.0" y="30" width="320" height="60"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <subviews>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rediobutton_active_icon.png" id="hHu-1R-bSa">
-                                                <rect key="frame" x="30" y="5" width="17" height="16"/>
-                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                            </imageView>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rediobutton_unactive_icon.png" id="ONS-z5-EjN">
-                                                <rect key="frame" x="205" y="5" width="17" height="16"/>
-                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                            </imageView>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rediobutton_unactive_icon.png" id="dlm-qB-Wzk">
-                                                <rect key="frame" x="30" y="36" width="17" height="16"/>
-                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                            </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Male" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ecj-uH-6Us">
                                                 <rect key="frame" x="62" y="2" width="70" height="20"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -112,15 +186,51 @@
                                                 <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
+                                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="aHa-Tu-nvf">
+                                                <rect key="frame" x="27" y="1" width="24" height="24"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" image="radio-off.png">
+                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <state key="selected" image="radio-on.png"/>
+                                                <state key="highlighted" image="radio-on.png"/>
+                                                <connections>
+                                                    <action selector="Button_Selection:" destination="5PB-Yd-xui" eventType="touchUpInside" id="NdV-DV-s3S"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="1Aq-F8-Tw0">
+                                                <rect key="frame" x="202" y="1" width="24" height="24"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" image="radio-off.png">
+                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <state key="selected" image="radio-on.png"/>
+                                                <state key="highlighted" image="radio-on.png"/>
+                                                <connections>
+                                                    <action selector="Button_Selection:" destination="5PB-Yd-xui" eventType="touchUpInside" id="1Za-6a-WsW"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="chn-Ba-Euz">
+                                                <rect key="frame" x="27" y="32" width="27" height="24"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <inset key="contentEdgeInsets" minX="0.0" minY="0.0" maxX="3" maxY="0.0"/>
+                                                <state key="normal" image="radio-off.png">
+                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <state key="selected" image="radio-on.png"/>
+                                                <state key="highlighted" image="radio-on.png"/>
+                                                <connections>
+                                                    <action selector="Button_Selection:" destination="5PB-Yd-xui" eventType="touchUpInside" id="eCd-Z6-9Ue"/>
+                                                </connections>
+                                            </button>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     </view>
                                 </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                             <view contentMode="scaleToFill" id="LnC-ca-a4n">
-                                <rect key="frame" x="0.0" y="154" width="320" height="90"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <rect key="frame" x="0.0" y="155" width="320" height="90"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Occupation" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="VzC-vv-o1h">
                                         <rect key="frame" x="20" y="10" width="100" height="20"/>
@@ -133,22 +243,6 @@
                                         <rect key="frame" x="0.0" y="30" width="320" height="60"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <subviews>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="checked_image.png" id="rW0-Gh-aa6">
-                                                <rect key="frame" x="30" y="5" width="17" height="16"/>
-                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                            </imageView>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="unchecked_image.png" id="dDh-q2-dwG">
-                                                <rect key="frame" x="205" y="5" width="17" height="16"/>
-                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                            </imageView>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="unchecked_image.png" id="24t-ce-Yqm">
-                                                <rect key="frame" x="30" y="36" width="17" height="16"/>
-                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                            </imageView>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="unchecked_image.png" id="Ns5-cX-gyJ">
-                                                <rect key="frame" x="205" y="36" width="17" height="16"/>
-                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                            </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Student" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="VNT-Rw-90x">
                                                 <rect key="frame" x="62" y="2" width="70" height="20"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -177,6 +271,58 @@
                                                 <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
+                                            <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="AsX-hP-tQU">
+                                                <rect key="frame" x="32" y="4" width="18" height="15"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <inset key="contentEdgeInsets" minX="0.0" minY="0.0" maxX="3" maxY="0.0"/>
+                                                <state key="normal" image="unchecked_image.png">
+                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <state key="selected" image="checked_image.png"/>
+                                                <state key="highlighted" image="checked_image.png"/>
+                                                <connections>
+                                                    <action selector="Button_Selection:" destination="5PB-Yd-xui" eventType="touchUpInside" id="Kua-o1-Cgn"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="jM9-JY-dyB">
+                                                <rect key="frame" x="207" y="4" width="18" height="15"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <inset key="contentEdgeInsets" minX="0.0" minY="0.0" maxX="3" maxY="0.0"/>
+                                                <state key="normal" image="unchecked_image.png">
+                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <state key="selected" image="checked_image.png"/>
+                                                <state key="highlighted" image="checked_image.png"/>
+                                                <connections>
+                                                    <action selector="Button_Selection:" destination="5PB-Yd-xui" eventType="touchUpInside" id="Riv-bv-919"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="YEf-d0-ZVZ">
+                                                <rect key="frame" x="207" y="37" width="18" height="15"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <inset key="contentEdgeInsets" minX="0.0" minY="0.0" maxX="3" maxY="0.0"/>
+                                                <state key="normal" image="unchecked_image.png">
+                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <state key="selected" image="checked_image.png"/>
+                                                <state key="highlighted" image="checked_image.png"/>
+                                                <connections>
+                                                    <action selector="Button_Selection:" destination="5PB-Yd-xui" eventType="touchUpInside" id="dzj-jh-hVh"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="2HL-5N-f1w">
+                                                <rect key="frame" x="32" y="37" width="18" height="15"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <inset key="contentEdgeInsets" minX="0.0" minY="0.0" maxX="3" maxY="0.0"/>
+                                                <state key="normal" image="unchecked_image.png">
+                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <state key="selected" image="checked_image.png"/>
+                                                <state key="highlighted" image="checked_image.png"/>
+                                                <connections>
+                                                    <action selector="Button_Selection:" destination="5PB-Yd-xui" eventType="touchUpInside" id="fle-ia-EY2"/>
+                                                </connections>
+                                            </button>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     </view>
@@ -184,8 +330,8 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                             <view contentMode="scaleToFill" id="iwz-xJ-ZAh">
-                                <rect key="frame" x="0.0" y="244" width="320" height="90"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <rect key="frame" x="0.0" y="245" width="320" height="90"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Food" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Ewi-Mm-AUZ">
                                         <rect key="frame" x="20" y="10" width="70" height="20"/>
@@ -198,18 +344,45 @@
                                         <rect key="frame" x="0.0" y="30" width="320" height="60"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <subviews>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rediobutton_active_icon.png" id="1du-zO-qWm">
-                                                <rect key="frame" x="30" y="5" width="17" height="16"/>
-                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                            </imageView>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rediobutton_unactive_icon.png" id="aSg-4c-7Fk">
-                                                <rect key="frame" x="205" y="5" width="17" height="16"/>
-                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                            </imageView>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rediobutton_unactive_icon.png" id="s4l-4V-7Ay">
-                                                <rect key="frame" x="30" y="36" width="17" height="16"/>
-                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                            </imageView>
+                                            <button opaque="NO" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="qZV-hw-sF1">
+                                                <rect key="frame" x="25" y="32" width="27" height="24"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <inset key="contentEdgeInsets" minX="0.0" minY="0.0" maxX="3" maxY="0.0"/>
+                                                <state key="normal" image="radio-off.png">
+                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <state key="selected" image="radio-on.png"/>
+                                                <state key="highlighted" image="radio-on.png"/>
+                                                <connections>
+                                                    <action selector="Button_Selection:" destination="5PB-Yd-xui" eventType="touchUpInside" id="pFz-ha-JKr"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="9" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="2PH-uf-syx">
+                                                <rect key="frame" x="200" y="1" width="27" height="24"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <inset key="contentEdgeInsets" minX="0.0" minY="0.0" maxX="3" maxY="0.0"/>
+                                                <state key="normal" image="radio-off.png">
+                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <state key="selected" image="radio-on.png"/>
+                                                <state key="highlighted" image="radio-on.png"/>
+                                                <connections>
+                                                    <action selector="Button_Selection:" destination="5PB-Yd-xui" eventType="touchUpInside" id="rGA-kh-Qbc"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Z4I-YX-quz">
+                                                <rect key="frame" x="25" y="1" width="27" height="24"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <inset key="contentEdgeInsets" minX="0.0" minY="0.0" maxX="3" maxY="0.0"/>
+                                                <state key="normal" image="radio-off.png">
+                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <state key="selected" image="radio-on.png"/>
+                                                <state key="highlighted" image="radio-on.png"/>
+                                                <connections>
+                                                    <action selector="Button_Selection:" destination="5PB-Yd-xui" eventType="touchUpInside" id="h9w-Id-XhN"/>
+                                                </connections>
+                                            </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Veg" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="bYF-1X-CKi">
                                                 <rect key="frame" x="62" y="2" width="70" height="20"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -238,8 +411,8 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                             <view contentMode="scaleToFill" id="EER-Lo-mbo">
-                                <rect key="frame" x="0.0" y="334" width="320" height="70"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <rect key="frame" x="0.0" y="335" width="320" height="70"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Smoking / Drinking" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Isb-XK-xvq">
                                         <rect key="frame" x="20" y="10" width="200" height="20"/>
@@ -252,14 +425,19 @@
                                         <rect key="frame" x="0.0" y="30" width="320" height="40"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <subviews>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rediobutton_active_icon.png" id="fkM-Wx-PYw">
-                                                <rect key="frame" x="30" y="5" width="17" height="16"/>
-                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                            </imageView>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rediobutton_unactive_icon.png" id="fXp-J7-gMk">
-                                                <rect key="frame" x="205" y="5" width="17" height="16"/>
-                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                            </imageView>
+                                            <button opaque="NO" tag="12" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="KOa-Ek-xbv">
+                                                <rect key="frame" x="200" y="1" width="27" height="24"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <inset key="contentEdgeInsets" minX="0.0" minY="0.0" maxX="3" maxY="0.0"/>
+                                                <state key="normal" image="radio-off.png">
+                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <state key="selected" image="radio-on.png"/>
+                                                <state key="highlighted" image="radio-on.png"/>
+                                                <connections>
+                                                    <action selector="Button_Selection:" destination="5PB-Yd-xui" eventType="touchUpInside" id="yHk-d6-3Nn"/>
+                                                </connections>
+                                            </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Allowed" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="t8a-Lh-6bm">
                                                 <rect key="frame" x="62" y="3" width="70" height="20"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -267,6 +445,19 @@
                                                 <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
+                                            <button opaque="NO" tag="11" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="B0i-LA-HhA">
+                                                <rect key="frame" x="25" y="1" width="27" height="24"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <inset key="contentEdgeInsets" minX="0.0" minY="0.0" maxX="3" maxY="0.0"/>
+                                                <state key="normal" image="radio-off.png">
+                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <state key="selected" image="radio-on.png"/>
+                                                <state key="highlighted" image="radio-on.png"/>
+                                                <connections>
+                                                    <action selector="Button_Selection:" destination="5PB-Yd-xui" eventType="touchUpInside" id="c43-kb-Xpi"/>
+                                                </connections>
+                                            </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Not-Allowed" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="1YU-w6-Ec6">
                                                 <rect key="frame" x="230" y="4" width="90" height="20"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -281,8 +472,8 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                             <view contentMode="scaleToFill" id="J33-lp-sJa">
-                                <rect key="frame" x="0.0" y="404" width="320" height="70"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <rect key="frame" x="0.0" y="405" width="320" height="70"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Guests" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Mdv-6W-dod">
                                         <rect key="frame" x="20" y="10" width="70" height="20"/>
@@ -295,14 +486,19 @@
                                         <rect key="frame" x="0.0" y="30" width="320" height="40"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <subviews>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rediobutton_active_icon.png" id="ddj-FJ-kVH">
-                                                <rect key="frame" x="30" y="5" width="17" height="16"/>
-                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                            </imageView>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rediobutton_unactive_icon.png" id="Xfl-gl-UMN">
-                                                <rect key="frame" x="205" y="5" width="17" height="16"/>
-                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                            </imageView>
+                                            <button opaque="NO" tag="14" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Tba-Hy-hfc">
+                                                <rect key="frame" x="200" y="1" width="27" height="24"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <inset key="contentEdgeInsets" minX="0.0" minY="0.0" maxX="3" maxY="0.0"/>
+                                                <state key="normal" image="radio-off.png">
+                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <state key="selected" image="radio-on.png"/>
+                                                <state key="highlighted" image="radio-on.png"/>
+                                                <connections>
+                                                    <action selector="Button_Selection:" destination="5PB-Yd-xui" eventType="touchUpInside" id="1bb-D1-DYH"/>
+                                                </connections>
+                                            </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Allowed" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="wYt-3A-cP2">
                                                 <rect key="frame" x="62" y="3" width="70" height="20"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -310,6 +506,19 @@
                                                 <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
+                                            <button opaque="NO" tag="13" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="nVB-hk-FAW">
+                                                <rect key="frame" x="25" y="1" width="27" height="24"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <inset key="contentEdgeInsets" minX="0.0" minY="0.0" maxX="3" maxY="0.0"/>
+                                                <state key="normal" image="radio-off.png">
+                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <state key="selected" image="radio-on.png"/>
+                                                <state key="highlighted" image="radio-on.png"/>
+                                                <connections>
+                                                    <action selector="Button_Selection:" destination="5PB-Yd-xui" eventType="touchUpInside" id="cvC-jK-gD0"/>
+                                                </connections>
+                                            </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Not-Allowed" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="XJy-XJ-JzB">
                                                 <rect key="frame" x="230" y="4" width="90" height="20"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -324,8 +533,8 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                             <view contentMode="scaleToFill" id="R0J-Yg-42r">
-                                <rect key="frame" x="0.0" y="474" width="320" height="70"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <rect key="frame" x="0.0" y="475" width="320" height="70"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pets" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="tko-Xn-ILW">
                                         <rect key="frame" x="20" y="10" width="70" height="20"/>
@@ -338,14 +547,6 @@
                                         <rect key="frame" x="0.0" y="30" width="320" height="40"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <subviews>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rediobutton_active_icon.png" id="4Bb-9X-xJY">
-                                                <rect key="frame" x="30" y="5" width="17" height="16"/>
-                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                            </imageView>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rediobutton_unactive_icon.png" id="J8U-ug-kBw">
-                                                <rect key="frame" x="205" y="5" width="17" height="16"/>
-                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                            </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Allowed" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="9c2-cF-WXQ">
                                                 <rect key="frame" x="62" y="3" width="70" height="20"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -353,6 +554,32 @@
                                                 <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
+                                            <button opaque="NO" tag="16" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="4lI-rS-zBH">
+                                                <rect key="frame" x="202" y="1" width="24" height="24"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <inset key="contentEdgeInsets" minX="0.0" minY="0.0" maxX="3" maxY="0.0"/>
+                                                <state key="normal" image="radio-off.png">
+                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <state key="selected" image="radio-on.png"/>
+                                                <state key="highlighted" image="radio-on.png"/>
+                                                <connections>
+                                                    <action selector="Button_Selection:" destination="5PB-Yd-xui" eventType="touchUpInside" id="9tc-6h-vy7"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="15" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="ESn-to-xUB">
+                                                <rect key="frame" x="25" y="1" width="27" height="24"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <inset key="contentEdgeInsets" minX="0.0" minY="0.0" maxX="3" maxY="0.0"/>
+                                                <state key="normal" image="radio-off.png">
+                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <state key="selected" image="radio-on.png"/>
+                                                <state key="highlighted" image="radio-on.png"/>
+                                                <connections>
+                                                    <action selector="Button_Selection:" destination="5PB-Yd-xui" eventType="touchUpInside" id="F3u-aP-hNz"/>
+                                                </connections>
+                                            </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Not-Allowed" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Pq3-B1-FkT">
                                                 <rect key="frame" x="230" y="4" width="90" height="20"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -371,12 +598,32 @@
                     </view>
                     <navigationItem key="navigationItem" title="Preferences" id="MU5-LR-Fad"/>
                     <connections>
-                        <segue destination="yuJ-nB-9Gt" kind="push" identifier="propertyDescription" id="fcx-F9-DFb"/>
+                        <outlet property="GuestAllowed" destination="nVB-hk-FAW" id="5xa-KA-bT1"/>
+                        <outlet property="GuestNotAllowed" destination="Tba-Hy-hfc" id="N5R-3H-ncD"/>
+                        <outlet property="PetsAllowed" destination="ESn-to-xUB" id="3Cd-gV-lXr"/>
+                        <outlet property="PetsNotAllowed" destination="4lI-rS-zBH" id="iSV-UO-rmV"/>
+                        <outlet property="SmokingAllowed" destination="B0i-LA-HhA" id="1dh-WA-rWI"/>
+                        <outlet property="SmokingNotAllowed" destination="KOa-Ek-xbv" id="5yg-8I-q9A"/>
+                        <outlet property="anyFood" destination="qZV-hw-sF1" id="Wag-MU-hmc"/>
+                        <outlet property="anyGender" destination="chn-Ba-Euz" id="XF0-Sr-hoC"/>
+                        <outlet property="anyProfession" destination="YEf-d0-ZVZ" id="bBS-7h-gYg"/>
+                        <outlet property="entrepreneur" destination="2HL-5N-f1w" id="nF8-VS-OGc"/>
+                        <outlet property="female" destination="1Aq-F8-Tw0" id="vi5-EP-Epb"/>
+                        <outlet property="male" destination="aHa-Tu-nvf" id="Neo-Kf-Nji"/>
+                        <outlet property="nonVeg" destination="2PH-uf-syx" id="HkY-3q-EyZ"/>
+                        <outlet property="student" destination="AsX-hP-tQU" id="zEP-50-XAv"/>
+                        <outlet property="veg" destination="Z4I-YX-quz" id="pMg-1F-j3r"/>
+                        <outlet property="working" destination="jM9-JY-dyB" id="fBz-6M-Krn"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dMm-XG-THR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="vv8-4p-n1d">
+                    <connections>
+                        <outlet property="delegate" destination="5PB-Yd-xui" id="erN-XC-jmI"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="188" y="276"/>
+            <point key="canvasLocation" x="206" y="236"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="OPc-uQ-593">
@@ -404,24 +651,24 @@
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="zcX-z0-Ydv">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="569"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell userInteractionEnabled="NO" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="StaticPropertyCell" rowHeight="260" id="cam-cp-QrX">
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="260"/>
-                                        <autoresizingMask key="autoresizingMask"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="cam-cp-QrX" id="blw-a9-AIE">
-                                            <autoresizingMask key="autoresizingMask"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" id="0T3-w3-Ghy">
-                                                    <rect key="frame" x="-1" y="-2" width="2880" height="2077"/>
-                                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                    <rect key="frame" x="0.0" y="-2" width="320" height="259"/>
+                                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="myroomi" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="mTu-D7-ddi">
-                                                            <rect key="frame" x="40" y="56" width="240" height="78"/>
-                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            <rect key="frame" x="0.0" y="56" width="320" height="78"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
                                                             <fontDescription key="fontDescription" name="SnellRoundhand" family="Snell Roundhand" pointSize="50"/>
                                                             <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                             <color key="highlightedColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -429,7 +676,7 @@
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Type Of Property" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="f8R-Iv-w3d">
                                                             <rect key="frame" x="40" y="204" width="240" height="64"/>
-                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            <autoresizingMask key="autoresizingMask"/>
                                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                             <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                             <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="26"/>
@@ -450,13 +697,13 @@
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="PropertyTypeCell" rowHeight="56" id="Pqx-60-2jd" customClass="PropertyTypeCell">
                                         <rect key="frame" x="10" y="260" width="300" height="56"/>
-                                        <autoresizingMask key="autoresizingMask"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinY="YES"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" contentMode="center" tableViewCell="Pqx-60-2jd" id="29N-BK-neg">
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" id="9L7-en-bIb">
                                                     <rect key="frame" x="10" y="0.0" width="300" height="56"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
                                                     <subviews>
                                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="right_arrow.png" id="fcZ-6q-Gfl">
                                                             <rect key="frame" x="283" y="18" width="14" height="20"/>
@@ -568,8 +815,8 @@
                                 </connections>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="ZCC-DW-4b1">
-                                <rect key="frame" x="10" y="480" width="300" height="39"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <rect key="frame" x="10" y="527" width="300" height="39"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinY="YES" heightSizable="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <state key="normal" title="Next">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -600,7 +847,7 @@
                         <outlet property="houseNumTextField" destination="zH4-wp-W17" id="cMI-E5-1Hu"/>
                         <outlet property="stateTextField" destination="aUd-i3-8kh" id="cy8-ZS-Hrg"/>
                         <outlet property="streetTextField" destination="QFz-Hw-GLQ" id="ULz-wh-Zv6"/>
-                        <segue destination="5PB-Yd-xui" kind="push" identifier="propertyPreferences" id="5jh-Y9-rL7"/>
+                        <segue destination="5PB-Yd-xui" kind="push" identifier="propertyPreferences" id="6mD-Ul-cP1"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dJo-ty-wwM" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -618,14 +865,14 @@
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                 </view>
             </objects>
-            <point key="canvasLocation" x="-324" y="262"/>
+            <point key="canvasLocation" x="-308" y="236"/>
         </scene>
     </scenes>
     <resources>
         <image name="checked_image.png" width="22" height="22"/>
         <image name="city_icon.png" width="16" height="16"/>
-        <image name="rediobutton_active_icon.png" width="18" height="18"/>
-        <image name="rediobutton_unactive_icon.png" width="18" height="18"/>
+        <image name="radio-off.png" width="18" height="18"/>
+        <image name="radio-on.png" width="17" height="17"/>
         <image name="right_arrow.png" width="20" height="32"/>
         <image name="unchecked_image.png" width="22" height="22"/>
     </resources>
