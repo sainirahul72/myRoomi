@@ -26,6 +26,7 @@
 @property (strong, nonatomic) IBOutlet UIButton *PetsNotAllowed;
 @property (strong, nonatomic) IBOutlet UIButton *GuestAllowed;
 @property (strong, nonatomic) IBOutlet UIButton *GuestNotAllowed;
+@property (nonatomic, strong) NSMutableDictionary *propertyDictionary;
 
 
 @end

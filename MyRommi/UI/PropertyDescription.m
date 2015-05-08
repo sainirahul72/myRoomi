@@ -7,15 +7,17 @@
 //
 
 #import "PropertyDescription.h"
+#import "RoomDescription.h"
 
 @interface PropertyDescription ()
-
+@property (nonatomic, strong) NSMutableDictionary *propertyDes;
 @end
 
 @implementation PropertyDescription
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.propertyDes= [[NSMutableDictionary alloc] initWithObjectsAndKeys:@"",@"rooms",@"",@"bathrooms",@"",@"peopleCount",@"",@"balcony", nil];
     // Do any additional setup after loading the view.
 }
 
@@ -24,41 +26,50 @@
     // Dispose of any resources that can be recreated.
 }
 
-
--(IBAction)Button_Selection:(id)sender
-{
+- (IBAction)actionButton:(id)sender {
     switch ([sender tag]) {
+
         case 1:
-            [self.male setSelected:YES];
-            [self.any setSelected:NO];
-            [self.female setSelected:NO];
+            //[self.rooms setText:[NSString stringWithFormat:@"%d",]];
+            [self.propertyDes setValue:self.rooms.text forKey:@"rooms"];
             break;
         case 2:
-            [self.male setSelected:NO];
-            [self.any setSelected:NO];
-            [self.female setSelected:YES];
+            [self.propertyDes setValue:self.rooms.text forKey:@"rooms"];
             break;
         case 3:
-            [self.male setSelected:NO];
-            [self.any setSelected:YES];
-            [self.female setSelected:NO];
+            [self.propertyDes setValue:self.bathrooms.text forKey:@"bathrooms"];
             break;
-
+        case 4:
+            [self.propertyDes setValue:self.bathrooms.text forKey:@"bathrooms"];
+            break;
+        case 5:
+            [self.propertyDes setValue:self.peopleLivingIn.text forKey:@"peopleCount"];
+            break;
+        case 6:
+            [self.propertyDes setValue:self.peopleLivingIn.text forKey:@"peopleCount"];
+            break;
+        case 7:
+            [self.propertyDes setValue:self.balcony.text forKey:@"balcony"];
+            break;
+        case 8:
+            [self.propertyDes setValue:self.balcony.text forKey:@"balcony"];
+            break;
+            
         default:
             break;
     }
 }
 
-
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (IBAction)continueBurron:(id)sender {
+    [self.propertyDictionary setObject:self.propertyDes forKey:@"propertyDes"];
+    [self performSegueWithIdentifier:@"roomDescription" sender:self];
 }
-*/
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    if ([segue.identifier isEqualToString:@"roomDescription"]) {
+        RoomDescription *roomDesVC = [segue destinationViewController];
+        roomDesVC.propertyDictionary = self.propertyDictionary;
+    }
+}
 
 @end

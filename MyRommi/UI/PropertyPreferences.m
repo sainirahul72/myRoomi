@@ -7,16 +7,19 @@
 //
 
 #import "PropertyPreferences.h"
+#import "PropertyDescription.h"
+
 int student=0, working=0, Entrepreneur=0;
 @interface PropertyPreferences ()
-
+@property (nonatomic, strong) NSMutableDictionary *propertyPref;
 @end
 
 @implementation PropertyPreferences
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self.tableView reloadData];
+    //[self.tableView reloadData];
+    self.propertyPref = [[NSMutableDictionary alloc] initWithObjectsAndKeys:@"",@"gender",@"",@"occupation",@"",@"food",@"",@"smoking",@"",@"guests",@"",@"pets", nil];
     // Do any additional setup after loading the view.
 }
 
@@ -25,72 +28,7 @@ int student=0, working=0, Entrepreneur=0;
     // Dispose of any resources that can be recreated.
 }
 
-//- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
-//    return 1;
-//}
-//
-//-(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-//    return 6;
-//}
-//
-//-(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-//    if (indexPath.row==0) {
-//        GenderCell *cell = [tableView dequeueReusableCellWithIdentifier:@"gender"];
-//        return cell;
-//    }
-//    else if(indexPath.row==1){
-//        OccupationCell *cell = [tableView dequeueReusableCellWithIdentifier:@"occupation"];
-//        return cell;
-//    }
-//    else if(indexPath.row==2){
-//        FoodCell *cell = [tableView dequeueReusableCellWithIdentifier:@"food"];
-//        return cell;
-//    }
-//    else if(indexPath.row==3){
-//        SmokingCell *cell = [tableView dequeueReusableCellWithIdentifier:@"smoking"];
-//        return cell;
-//    }
-//    else if (indexPath.row==4){
-//        GuestCell *cell = [tableView dequeueReusableCellWithIdentifier:@"guest"];
-//        return cell;
-//    }
-//    else{
-//        PetsCell *cell = [tableView dequeueReusableCellWithIdentifier:@"pets"];
-//        return cell;
-//    }
-//}
-//
-//-(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
-//    if (indexPath.row<3) {
-//        return 90.0;
-//    }
-//    else{
-//        return 70.0;
-//    }
-//}
-//
-//
-//
-//-(void) tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-//    if (indexPath.row==0) {
-//
-//    }
-//    else if (indexPath.row==1){
-//        
-//    }
-//    else if (indexPath.row==2){
-//        
-//    }
-//    else if (indexPath.row==3){
-//        
-//    }
-//    else if (indexPath.row==4){
-//        
-//    }
-//    else{
-//        
-//    }
-//}
+
 
 -(IBAction)Button_Selection:(id)sender
 {
@@ -99,16 +37,19 @@ int student=0, working=0, Entrepreneur=0;
             [self.male setSelected:YES];
             [self.anyGender setSelected:NO];
             [self.female setSelected:NO];
+            [self.propertyPref setValue:@"male" forKey:@"gender"];
             break;
         case 2:
             [self.male setSelected:NO];
             [self.anyGender setSelected:NO];
             [self.female setSelected:YES];
+            [self.propertyPref setValue:@"female" forKey:@"gender"];
             break;
         case 3:
             [self.male setSelected:NO];
             [self.anyGender setSelected:YES];
             [self.female setSelected:NO];
+            [self.propertyPref setValue:@"any" forKey:@"gender"];
             break;
         
         
@@ -157,46 +98,56 @@ int student=0, working=0, Entrepreneur=0;
             [self.veg setSelected:YES];
             [self.nonVeg setSelected:NO];
             [self.anyFood setSelected:NO];
+            [self.propertyPref setValue:@"veg" forKey:@"food"];
             break;
         case 9:
             [self.veg setSelected:NO];
             [self.nonVeg setSelected:YES];
             [self.anyFood setSelected:NO];
+            [self.propertyPref setValue:@"non-veg" forKey:@"food"];
             break;
         case 10:
             [self.veg setSelected:NO];
             [self.nonVeg setSelected:NO];
             [self.anyFood setSelected:YES];
+            [self.propertyPref setValue:@"any" forKey:@"food"];
             break;
         
         
         case 11:
             [self.SmokingAllowed setSelected:YES];
             [self.SmokingNotAllowed setSelected:NO];
+            [self.propertyPref setValue:@"yes" forKey:@"smoking"];
             break;
         case 12:
             [self.SmokingAllowed setSelected:NO];
             [self.SmokingNotAllowed setSelected:YES];
+            [self.propertyPref setValue:@"no" forKey:@"smoking"];
+            
             break;
         
         
         case 13:
             [self.GuestAllowed setSelected:YES];
             [self.GuestNotAllowed setSelected:NO];
+            [self.propertyPref setValue:@"yes" forKey:@"guests"];
             break;
         case 14:
             [self.GuestAllowed setSelected:NO];
             [self.GuestNotAllowed setSelected:YES];
+            [self.propertyPref setValue:@"no" forKey:@"guests"];
             break;
         
         
         case 15:
             [self.PetsAllowed setSelected:YES];
             [self.PetsNotAllowed setSelected:NO];
+            [self.propertyPref setValue:@"yes" forKey:@"pets"];
             break;
         case 16:
             [self.PetsAllowed setSelected:NO];
             [self.PetsNotAllowed setSelected:YES];
+            [self.propertyPref setValue:@"no" forKey:@"pets"];
             break;
         
         
@@ -204,15 +155,17 @@ int student=0, working=0, Entrepreneur=0;
             break;
     }
 }
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (IBAction)continueBurron:(id)sender {
+    [self.propertyDictionary setObject:self.propertyPref forKey:@"propertyPref"];
+    [self performSegueWithIdentifier:@"PropertyDescription" sender:self];
 }
-*/
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    if ([segue.identifier isEqualToString:@"PropertyDescription"]) {
+        PropertyDescription *propertyDesVC = [segue destinationViewController];
+        propertyDesVC.propertyDictionary = self.propertyDictionary;
+    }
+}
+
 
 @end

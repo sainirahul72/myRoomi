@@ -12,6 +12,7 @@
 
 @interface AddProperty ()
 @property (nonatomic, strong) NSArray *propertyType;
+@property int curProp;
 @end
 
 @implementation AddProperty
@@ -27,13 +28,17 @@
     // Dispose of any resources that can be recreated.
 }
 
+-(void)viewDidAppear:(BOOL)animated{
+    [super viewDidAppear:animated];
+}
+
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
     return 1;
 }
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    return 5;
+    return 4;
 }
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
@@ -74,9 +79,14 @@
 
 -(void) tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     if (indexPath.row) {
+        self.curProp=(int)indexPath.row;
         [self performSegueWithIdentifier:@"propertyAddress" sender:self];
+        
     }
 }
+
+
+
 
 #pragma mark - Navigation
 
@@ -84,8 +94,7 @@
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     if ([segue.identifier isEqualToString:@"propertyAddress"]) {
         PropertyAddress *propertyAddressVC = [segue destinationViewController];
-        NSIndexPath *indexPath = [self.tableView indexPathForCell:sender];
-        propertyAddressVC.propertyType = self.propertyType[indexPath.row];
+        propertyAddressVC.propertyType = self.propertyType[self.curProp];
     }
 }
 /*

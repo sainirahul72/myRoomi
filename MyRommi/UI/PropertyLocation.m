@@ -9,29 +9,153 @@
 #import "PropertyLocation.h"
 
 @interface PropertyLocation ()
-
+@property (nonatomic, strong) NSMutableDictionary *propertyLocation;
 @end
 
 @implementation PropertyLocation
+@synthesize mapView,toolBar;
+
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.propertyLocation = [[NSMutableDictionary alloc] initWithObjectsAndKeys:@"",@"latitude",@"",@"longitude", nil];
+    
+    mapView.showsUserLocation = YES;
+    mapView.delegate=self;
+    
+    self.locationManager = [[CLLocationManager alloc] init];
+    self.locationManager.delegate = self;
+#ifdef __IPHONE_8_0
+    if(IS_OS_8_OR_LATER) {
+        // Use one or the other, not both. Depending on what you put in info.plist
+        // [self.locationManager requestWhenInUseAuthorization];
+        [self.locationManager requestAlwaysAuthorization];
+    }
+#endif
+    [self.locationManager startUpdatingLocation];
+    
+    mapView.showsUserLocation = YES;
+    [mapView setMapType:MKMapTypeStandard];
+    [mapView setZoomEnabled:YES];
+    [mapView setScrollEnabled:YES];
+    
+    
     // Do any additional setup after loading the view.
 }
+
+
+-(void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:YES];
+    
+    self.locationManager.distanceFilter = kCLDistanceFilterNone;
+    self.locationManager.desiredAccuracy = kCLLocationAccuracyBest;
+    [self.locationManager startUpdatingLocation];
+    NSLog(@"%@", [self deviceLocation]);
+    
+    //View Area
+    MKCoordinateRegion region = { { 0.0, 0.0 }, { 0.0, 0.0 } };
+    region.center.latitude = self.locationManager.location.coordinate.latitude;
+    region.center.longitude = self.locationManager.location.coordinate.longitude;
+    region.span.longitudeDelta = 0.005f;
+    region.span.longitudeDelta = 0.005f;
+    [mapView setRegion:region animated:YES];
+    
+}
+
+- (void)mapView:(MKMapView *)mapView didUpdateUserLocation:(MKUserLocation *)userLocation
+{
+    MKCoordinateRegion region = MKCoordinateRegionMakeWithDistance(userLocation.coordinate, 3000, 3000);
+    [self.mapView setRegion:[self.mapView regionThatFits:region] animated:YES];
+}
+- (NSString *)deviceLocation {
+    return [NSString stringWithFormat:@"latitude: %f longitude: %f", self.locationManager.location.coordinate.latitude, self.locationManager.location.coordinate.longitude];
+}
+- (NSString *)deviceLat {
+    return [NSString stringWithFormat:@"%f", self.locationManager.location.coordinate.latitude];
+}
+- (NSString *)deviceLon {
+    return [NSString stringWithFormat:@"%f", self.locationManager.location.coordinate.longitude];
+}
+- (NSString *)deviceAlt {
+    return [NSString stringWithFormat:@"%f", self.locationManager.location.altitude];
+}
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
+//- (void)mapView:(MKMapView *)mapView
+//didUpdateUserLocation:
+//(MKUserLocation *)userLocation
+//{
+//    self.mapView.centerCoordinate = userLocation.location.coordinate;
+//}
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
+//- (void)zoomIn: (id)sender
+//{
+//    MKUserLocation *userLocation = mapView.userLocation;
+//    MKCoordinateRegion region =
+//    MKCoordinateRegionMakeWithDistance (
+//                                        userLocation.location.coordinate, 50, 50);
+//    [mapView setRegion:region animated:NO];
+//}
+//
+//- (void)zoomOut: (id)sender
+//{
+//    MKUserLocation *userLocation = mapView.userLocation;
+//    MKCoordinateRegion region =
+//    MKCoordinateRegionMakeWithDistance (
+//                                        userLocation.location.coordinate, -50, -50);
+//    [mapView setRegion:region animated:NO];
+//}
+//
+//- (void) changeMapType: (id)sender
+//{
+//    if (mapView.mapType == MKMapTypeStandard)
+//        mapView.mapType = MKMapTypeSatellite;
+//    else
+//        mapView.mapType = MKMapTypeStandard;
+//}
+
+
+
+//    CLLocationCoordinate2D annotationCoord;
+//
+//    annotationCoord.latitude = 47.640071;
+//    annotationCoord.longitude = -122.129598;
+//
+//    MKPointAnnotation *annotationPoint = [[MKPointAnnotation alloc] init];
+//    annotationPoint.coordinate = annotationCoord;
+//    annotationPoint.title = @"Microsoft";
+//    annotationPoint.subtitle = @"Microsoft's headquarters";
+//    [mapView addAnnotation:annotationPoint];
+
+//    UIBarButtonItem *zoomIn =
+//    [[UIBarButtonItem alloc]
+//     initWithTitle: @"Zoom In"
+//     style:UIBarButtonItemStylePlain
+//     target: self
+//     action:@selector(zoomIn:)];
+//
+//    UIBarButtonItem *zoomOut =
+//    [[UIBarButtonItem alloc]
+//     initWithTitle: @"Zoom Out"
+//     style:UIBarButtonItemStylePlain
+//     target: self
+//     action:@selector(zoomOut:)];
+//
+//    UIBarButtonItem *typeButton =
+//    [[UIBarButtonItem alloc]
+//     initWithTitle: @"Map Type"
+//     style:UIBarButtonItemStylePlain
+//     target: self
+//     action:@selector(changeMapType:)];
+//
+//    NSArray *buttons = [[NSArray alloc]
+//                        initWithObjects:zoomIn, typeButton, zoomOut,nil];
+//
+//    toolBar.items = buttons;
 
 @end
