@@ -35,6 +35,7 @@
 		B7433FD01AE257CA00E1C931 /* bttn_bottom_green_normal@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B7433FCC1AE257CA00E1C931 /* bttn_bottom_green_normal@2x.png */; };
 		B7433FD11AE257CA00E1C931 /* bttn_bottom_green_pressed.png in Resources */ = {isa = PBXBuildFile; fileRef = B7433FCD1AE257CA00E1C931 /* bttn_bottom_green_pressed.png */; };
 		B7433FD21AE257CA00E1C931 /* bttn_bottom_green_pressed@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B7433FCE1AE257CA00E1C931 /* bttn_bottom_green_pressed@2x.png */; };
+		B77192931B0B1B3100BEBEB4 /* addproperty.json in Resources */ = {isa = PBXBuildFile; fileRef = B77192921B0B1B3100BEBEB4 /* addproperty.json */; };
 		B78B0A871ADD5B33008CCC97 /* MIRadioButtonGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = B78B0A861ADD5B33008CCC97 /* MIRadioButtonGroup.m */; };
 		B78B0A8D1ADD5BB6008CCC97 /* radio-off-blk.png in Resources */ = {isa = PBXBuildFile; fileRef = B78B0A8B1ADD5BB6008CCC97 /* radio-off-blk.png */; };
 		B78B0A8E1ADD5BB6008CCC97 /* radio-on-blk.png in Resources */ = {isa = PBXBuildFile; fileRef = B78B0A8C1ADD5BB6008CCC97 /* radio-on-blk.png */; };
@@ -116,6 +117,7 @@
 		B7433FCC1AE257CA00E1C931 /* bttn_bottom_green_normal@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bttn_bottom_green_normal@2x.png"; sourceTree = "<group>"; };
 		B7433FCD1AE257CA00E1C931 /* bttn_bottom_green_pressed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bttn_bottom_green_pressed.png; sourceTree = "<group>"; };
 		B7433FCE1AE257CA00E1C931 /* bttn_bottom_green_pressed@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bttn_bottom_green_pressed@2x.png"; sourceTree = "<group>"; };
+		B77192921B0B1B3100BEBEB4 /* addproperty.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = addproperty.json; sourceTree = "<group>"; };
 		B78B0A851ADD5B27008CCC97 /* MIRadioButtonGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MIRadioButtonGroup.h; sourceTree = "<group>"; };
 		B78B0A861ADD5B33008CCC97 /* MIRadioButtonGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MIRadioButtonGroup.m; sourceTree = "<group>"; };
 		B78B0A8B1ADD5BB6008CCC97 /* radio-off-blk.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "radio-off-blk.png"; sourceTree = "<group>"; };
@@ -208,6 +210,7 @@
 				B74103731ADA6ABD00711ADE /* Assets */,
 				B74102E71ADA47A800711ADE /* Info.plist */,
 				B74102E81ADA47A800711ADE /* main.m */,
+				B77192921B0B1B3100BEBEB4 /* addproperty.json */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -412,6 +415,7 @@
 				B7DCD0CC1ADD4ADB009E50B3 /* unchecked_image@2x.png in Resources */,
 				B7433FCF1AE257CA00E1C931 /* bttn_bottom_green_normal.png in Resources */,
 				B7D664F71AF4CE60006F13B2 /* add_hotelBE.png in Resources */,
+				B77192931B0B1B3100BEBEB4 /* addproperty.json in Resources */,
 				B74102FA1ADA47A800711ADE /* LaunchScreen.xib in Resources */,
 				B7DCD0CA1ADD4ADB009E50B3 /* checked_image@2x.png in Resources */,
 				B7DCD08A1ADD48DD009E50B3 /* mb_left_arrow.png in Resources */,

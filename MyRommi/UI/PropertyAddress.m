@@ -12,14 +12,13 @@
 @interface PropertyAddress ()
 @property (nonatomic, strong) NSMutableDictionary *propertyAddress;
 @property (nonatomic, strong) UIGestureRecognizer *tapper;
-@property (nonatomic, strong) NSMutableDictionary *propertyDictionary;
 @end
 
 @implementation PropertyAddress
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.propertyAddress = [[NSMutableDictionary alloc] initWithObjectsAndKeys:@"",@"house",@"",@"street",@"",@"city",@"",@"state",@"",@"postalCode",@"",@"country", nil];
+    self.propertyAddress = [[NSMutableDictionary alloc] initWithObjectsAndKeys:@"",@"house",@"",@"street",@"",@"city",@"",@"state",@"",@"postal_code",@"",@"country", nil];
     // Do any additional setup after loading the view.
     _tapper = [[UITapGestureRecognizer alloc]
                initWithTarget:self action:@selector(handleSingleTap:)];
@@ -57,7 +56,7 @@
     }
     else if ([textField tag]==5){
         
-        [self.propertyAddress setValue:textField.text forKey:@"postalCode"];
+        [self.propertyAddress setValue:textField.text forKey:@"postal_code"];
     }
     else{
         
@@ -75,7 +74,8 @@
 
 
 -(IBAction)ContinueButton :(id)sender{
-    self.propertyDictionary = [[NSMutableDictionary alloc] initWithObjectsAndKeys:self.propertyAddress,@"Address",self.propertyType,@"propertyType", nil];
+    //self.propertyDictionary = [[NSMutableDictionary alloc] initWithObjectsAndKeys:self.propertyAddress,@"Address", nil];
+    [self.propertyDictionary setObject:self.propertyAddress forKey:@"address"];
     [self performSegueWithIdentifier:@"propertyPreferences" sender:self];
 }
 

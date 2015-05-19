@@ -9,9 +9,10 @@
 #import "AddProperty.h"
 #import "PropertyTypeCell.h"
 #import "PropertyAddress.h"
+#import "PropertyLocation.h"
 
 @interface AddProperty ()
-@property (nonatomic, strong) NSArray *propertyType;
+@property (nonatomic, strong) NSMutableDictionary * propertyDict;
 @property int curProp;
 @end
 
@@ -19,7 +20,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.propertyType = [NSArray arrayWithObjects:@"Apartment",@"House",@"Banglow",@"Villa", nil];
+    self.propertyDict = [[NSMutableDictionary alloc] initWithObjectsAndKeys:@"",@"house_type", nil];
     // Do any additional setup after loading the view.
 }
 
@@ -38,7 +39,7 @@
 }
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    return 4;
+    return 5;
 }
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
@@ -79,31 +80,24 @@
 
 -(void) tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     if (indexPath.row) {
-        self.curProp=(int)indexPath.row;
-        [self performSegueWithIdentifier:@"propertyAddress" sender:self];
+        self.curProp=(int)indexPath.row-1;
+        [self.propertyDict setValue:[NSString stringWithFormat:@"%d",self.curProp] forKey:@"house_type"];
+        [self performSegueWithIdentifier:@"propertyLocation" sender:self];
         
     }
 }
-
-
-
 
 #pragma mark - Navigation
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    if ([segue.identifier isEqualToString:@"propertyAddress"]) {
-        PropertyAddress *propertyAddressVC = [segue destinationViewController];
-        propertyAddressVC.propertyType = self.propertyType[self.curProp];
+    if ([segue.identifier isEqualToString:@"propertyLocation"]) {
+        PropertyLocation *propertyLocationVC = [segue destinationViewController];
+        propertyLocationVC.propertyType = self.propertyDict;
+        //self.propertyType[self.curProp];
     }
 }
-/*
- NSArray *options =[[NSArray alloc]initWithObjects:@"1",@"2",@"3",@"4",@"5",@"6",nil];
-	MIRadioButtonGroup *group =[[MIRadioButtonGroup alloc]initWithFrame:CGRectMake(0, 20, 320, 75) andOptions:options andColumns:4];
- //[group setSelected:1];
-	//[group clearAll];
-	//[group removeButtonAtIndex:2];
- */
+
 
 
 @end

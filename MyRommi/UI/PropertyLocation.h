@@ -20,5 +20,5 @@
 @property (strong, nonatomic) IBOutlet MKMapView *mapView;
 @property (strong, nonatomic) IBOutlet UIToolbar *toolBar;
 @property(nonatomic, retain) CLLocationManager *locationManager;
-@property (nonatomic, strong) NSMutableDictionary *propertyDictionary;
+@property (nonatomic, strong) NSMutableDictionary *propertyType;
 @end

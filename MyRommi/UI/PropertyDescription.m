@@ -17,7 +17,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.propertyDes= [[NSMutableDictionary alloc] initWithObjectsAndKeys:@"",@"rooms",@"",@"bathrooms",@"",@"peopleCount",@"",@"balcony", nil];
+    self.propertyDes= [[NSMutableDictionary alloc] initWithObjectsAndKeys:@"",@"prop_bedrooms",@"",@"prop_bathrooms",@"",@"people_count",@"",@"prop_balcony", nil];
     // Do any additional setup after loading the view.
 }
 
@@ -30,29 +30,53 @@
     switch ([sender tag]) {
 
         case 1:
-            //[self.rooms setText:[NSString stringWithFormat:@"%d",]];
-            [self.propertyDes setValue:self.rooms.text forKey:@"rooms"];
+            if (self.rooms.text.intValue > 1) {
+                [self.rooms setText:[NSString stringWithFormat:@"%d",(self.rooms.text.intValue-1)]];
+                if (self.bathrooms.text.intValue > self.rooms.text.intValue) {
+                    [self.bathrooms setText:[NSString stringWithFormat:@"%d",(self.rooms.text.intValue)]];
+                }
+                if (self.peopleLivingIn.text.intValue > 2*self.rooms.text.intValue) {
+                    [self.peopleLivingIn setText:[NSString stringWithFormat:@"%d",(2*self.rooms.text.intValue)]];
+                }
+                if (self.balcony.text.intValue > self.rooms.text.intValue) {
+                    [self.balcony setText:[NSString stringWithFormat:@"%d",(self.rooms.text.intValue)]];
+                }
+            }
             break;
         case 2:
-            [self.propertyDes setValue:self.rooms.text forKey:@"rooms"];
+            if (self.rooms.text.intValue < 4) {
+                [self.rooms setText:[NSString stringWithFormat:@"%d",(self.rooms.text.intValue+1)]];
+            }
             break;
         case 3:
-            [self.propertyDes setValue:self.bathrooms.text forKey:@"bathrooms"];
+            if (self.bathrooms.text.intValue > 1) {
+                [self.bathrooms setText:[NSString stringWithFormat:@"%d",(self.bathrooms.text.intValue-1)]];
+            }
             break;
         case 4:
-            [self.propertyDes setValue:self.bathrooms.text forKey:@"bathrooms"];
+            if (self.bathrooms.text.intValue < self.rooms.text.intValue) {
+                [self.bathrooms setText:[NSString stringWithFormat:@"%d",(self.bathrooms.text.intValue+1)]];
+            }
             break;
         case 5:
-            [self.propertyDes setValue:self.peopleLivingIn.text forKey:@"peopleCount"];
+            if (self.peopleLivingIn.text.intValue > 0) {
+                [self.peopleLivingIn setText:[NSString stringWithFormat:@"%d",(self.peopleLivingIn.text.intValue-1)]];
+            }
             break;
         case 6:
-            [self.propertyDes setValue:self.peopleLivingIn.text forKey:@"peopleCount"];
+            if (self.peopleLivingIn.text.intValue < 2*self.rooms.text.intValue) {
+                [self.peopleLivingIn setText:[NSString stringWithFormat:@"%d",(self.peopleLivingIn.text.intValue+1)]];
+            }
             break;
         case 7:
-            [self.propertyDes setValue:self.balcony.text forKey:@"balcony"];
+            if (self.balcony.text.intValue > 0) {
+                [self.balcony setText:[NSString stringWithFormat:@"%d",(self.balcony.text.intValue-1)]];
+            }
             break;
         case 8:
-            [self.propertyDes setValue:self.balcony.text forKey:@"balcony"];
+            if (self.balcony.text.intValue < self.rooms.text.intValue) {
+                [self.balcony setText:[NSString stringWithFormat:@"%d",(self.balcony.text.intValue+1)]];
+            }
             break;
             
         default:
@@ -61,7 +85,11 @@
 }
 
 - (IBAction)continueBurron:(id)sender {
-    [self.propertyDictionary setObject:self.propertyDes forKey:@"propertyDes"];
+    [self.propertyDes setValue:self.rooms.text forKey:@"prop_bedrooms"];
+    [self.propertyDes setValue:self.bathrooms.text forKey:@"prop_bathrooms"];
+    [self.propertyDes setValue:self.peopleLivingIn.text forKey:@"people_count"];
+    [self.propertyDes setValue:self.balcony.text forKey:@"prop_balcony"];
+    [self.propertyDictionary setObject:self.propertyDes forKey:@"property_description"];
     [self performSegueWithIdentifier:@"roomDescription" sender:self];
 }
 

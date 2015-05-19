@@ -7,9 +7,11 @@
 //
 
 #import "PropertyLocation.h"
+#import "PropertyAddress.h"
 
 @interface PropertyLocation ()
 @property (nonatomic, strong) NSMutableDictionary *propertyLocation;
+@property (nonatomic, strong) NSMutableDictionary *propertyDictionary;
 @end
 
 @implementation PropertyLocation
@@ -50,8 +52,10 @@
     self.locationManager.distanceFilter = kCLDistanceFilterNone;
     self.locationManager.desiredAccuracy = kCLLocationAccuracyBest;
     [self.locationManager startUpdatingLocation];
-    NSLog(@"%@", [self deviceLocation]);
-    
+    [self deviceLocation];
+    [self.propertyLocation setValue:[self deviceLat] forKey:@"latitude"];
+    [self.propertyLocation setValue:[self deviceLon] forKey:@"longitude"];
+    self.propertyDictionary = [[NSMutableDictionary alloc] initWithObjectsAndKeys:self.propertyLocation,@"location",self.propertyType,@"property_type", nil];
     //View Area
     MKCoordinateRegion region = { { 0.0, 0.0 }, { 0.0, 0.0 } };
     region.center.latitude = self.locationManager.location.coordinate.latitude;
@@ -69,6 +73,7 @@
 }
 - (NSString *)deviceLocation {
     return [NSString stringWithFormat:@"latitude: %f longitude: %f", self.locationManager.location.coordinate.latitude, self.locationManager.location.coordinate.longitude];
+    
 }
 - (NSString *)deviceLat {
     return [NSString stringWithFormat:@"%f", self.locationManager.location.coordinate.latitude];
@@ -84,6 +89,17 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (IBAction)continueButton:(id)sender {
+    [self performSegueWithIdentifier:@"propertyAddress" sender:self];
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    if ([segue.identifier isEqualToString:@"propertyAddress"]) {
+        PropertyAddress *propertyAddressVC = [segue destinationViewController];
+        propertyAddressVC.propertyDictionary = self.propertyDictionary;
+    }
 }
 
 //- (void)mapView:(MKMapView *)mapView

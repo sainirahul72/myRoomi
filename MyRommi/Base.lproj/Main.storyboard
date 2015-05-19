@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="FCa-Fy-sSa">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="FCa-Fy-sSa">
     <dependencies>
         <deployment version="1792" identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
     </dependencies>
     <scenes>
         <!--Property Description-->
@@ -115,7 +115,7 @@
                                             <action selector="actionButton:" destination="yuJ-nB-9Gt" eventType="touchUpInside" id="ZXH-Ph-Zdb"/>
                                         </connections>
                                     </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="4tt-OQ-Lj0">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="4tt-OQ-Lj0">
                                         <rect key="frame" x="140" y="12" width="20" height="20"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -149,7 +149,7 @@
                                             <action selector="actionButton:" destination="yuJ-nB-9Gt" eventType="touchUpInside" id="qVN-yS-OyL"/>
                                         </connections>
                                     </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="VK7-jv-j0p">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="VK7-jv-j0p">
                                         <rect key="frame" x="140" y="12" width="20" height="20"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -221,7 +221,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xU0-mp-Dks" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="769" y="241.99999999999997"/>
+            <point key="canvasLocation" x="789" y="255"/>
         </scene>
         <!--Room Description-->
         <scene sceneID="KkP-Ko-wIH">
@@ -248,6 +248,9 @@
                                         <state key="normal" backgroundImage="less_hotelBE.png">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="Button_Selection:" destination="HgC-eI-voN" eventType="touchUpInside" id="xI9-FP-uVa"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Qc3-yK-OZB">
                                         <rect key="frame" x="270" y="12" width="22" height="22"/>
@@ -255,6 +258,9 @@
                                         <state key="normal" backgroundImage="add_hotelBE.png">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="Button_Selection:" destination="HgC-eI-voN" eventType="touchUpInside" id="xku-3Z-zPK"/>
+                                        </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="hbt-f3-HcQ">
                                         <rect key="frame" x="140" y="12" width="20" height="20"/>
@@ -283,6 +289,9 @@
                                         <state key="normal" backgroundImage="less_hotelBE.png">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="Button_Selection:" destination="HgC-eI-voN" eventType="touchUpInside" id="XSf-OP-5lC"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" tag="12" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="JdR-gJ-7GG">
                                         <rect key="frame" x="270" y="12" width="22" height="22"/>
@@ -290,6 +299,9 @@
                                         <state key="normal" backgroundImage="add_hotelBE.png">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="Button_Selection:" destination="HgC-eI-voN" eventType="touchUpInside" id="iiU-80-Glt"/>
+                                        </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Dec-Nt-kSE">
                                         <rect key="frame" x="140" y="12" width="20" height="20"/>
@@ -579,12 +591,11 @@
                         <outlet property="roomSharedNo" destination="t0V-0z-d2b" id="H8K-ox-NjY"/>
                         <outlet property="roomSharedYes" destination="sLx-NW-uIT" id="MhZ-Hf-52M"/>
                         <outlet property="roomsAvailableCount" destination="hbt-f3-HcQ" id="6z4-bi-egf"/>
-                        <segue destination="vXZ-lx-hvc" kind="push" identifier="propertyLocation" id="SUv-m4-E1O"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="olU-KE-vTZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1273" y="235.99999999999994"/>
+            <point key="canvasLocation" x="1297" y="235"/>
         </scene>
         <!--Location-->
         <scene sceneID="ufC-wZ-h7g">
@@ -619,6 +630,18 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="3dm-wb-X3R">
+                                <rect key="frame" x="0.0" y="528" width="320" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <color key="backgroundColor" red="0.1333333333" green="0.1843137255" blue="0.23921568630000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <state key="normal" title="Next">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="continueButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="7ok-Hr-8We"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.94117647058823528" green="0.94117647058823528" blue="0.94117647058823528" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
@@ -628,11 +651,12 @@
                     <connections>
                         <outlet property="mapView" destination="ad3-Ss-HzE" id="jyQ-Yj-4eX"/>
                         <outlet property="toolBar" destination="lZ4-cI-Qsv" id="p1d-e3-cOM"/>
+                        <segue destination="QFI-sl-4ZE" kind="push" identifier="propertyAddress" id="SXL-Jn-0ac"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1874" y="246.99999999999997"/>
+            <point key="canvasLocation" x="-790" y="288"/>
         </scene>
         <!--Preferences-->
         <scene sceneID="ubP-G9-oFR">
@@ -1131,7 +1155,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="206" y="235.99999999999994"/>
+            <point key="canvasLocation" x="272" y="281"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="OPc-uQ-593">
@@ -1147,7 +1171,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WEJ-dV-Iq9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1459" y="271"/>
+            <point key="canvasLocation" x="-1719" y="305"/>
         </scene>
         <!--Property-->
         <scene sceneID="rJh-BY-0LY">
@@ -1165,9 +1189,10 @@
                                 <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell userInteractionEnabled="NO" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="StaticPropertyCell" rowHeight="260" id="cam-cp-QrX">
-                                        <rect key="frame" x="0.0" y="0.0" width="320" height="260"/>
+                                        <rect key="frame" x="0.0" y="86" width="320" height="260"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="cam-cp-QrX" id="blw-a9-AIE">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="260"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" id="0T3-w3-Ghy">
@@ -1204,9 +1229,10 @@
                                         <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="PropertyTypeCell" rowHeight="56" id="Pqx-60-2jd" customClass="PropertyTypeCell">
-                                        <rect key="frame" x="10" y="260" width="300" height="56"/>
+                                        <rect key="frame" x="0.0" y="346" width="320" height="56"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMinY="YES"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" contentMode="center" tableViewCell="Pqx-60-2jd" id="29N-BK-neg">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="56"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" id="9L7-en-bIb">
@@ -1262,12 +1288,12 @@
                     </navigationItem>
                     <connections>
                         <outlet property="tableView" destination="zcX-z0-Ydv" id="it8-Af-ZhU"/>
-                        <segue destination="QFI-sl-4ZE" kind="push" identifier="propertyAddress" id="RIg-hc-o3D"/>
+                        <segue destination="vXZ-lx-hvc" kind="push" identifier="propertyLocation" id="Yi3-J8-q8l"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bef-zi-bLe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-961" y="271"/>
+            <point key="canvasLocation" x="-1259" y="293"/>
         </scene>
         <!--Property Address-->
         <scene sceneID="Bzb-l7-VPh">
@@ -1316,18 +1342,6 @@
                                     <outlet property="delegate" destination="QFI-sl-4ZE" id="qcz-B5-ePt"/>
                                 </connections>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="ZCC-DW-4b1">
-                                <rect key="frame" x="0.0" y="528" width="320" height="40"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.1333333333" green="0.1843137255" blue="0.23921568630000001" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                                <state key="normal" title="Next">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="ContinueButton:" destination="QFI-sl-4ZE" eventType="touchUpInside" id="6Df-5s-ePV"/>
-                                </connections>
-                            </button>
                             <textField opaque="NO" clipsSubviews="YES" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Janakpuri" borderStyle="roundedRect" placeholder="Street Name / Landmark" minimumFontSize="17" id="QFz-Hw-GLQ">
                                 <rect key="frame" x="20" y="154" width="280" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -1346,6 +1360,18 @@
                                     <outlet property="delegate" destination="QFI-sl-4ZE" id="hPa-J0-Ij2"/>
                                 </connections>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="ZCC-DW-4b1">
+                                <rect key="frame" x="0.0" y="528" width="320" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <color key="backgroundColor" red="0.1333333333" green="0.1843137255" blue="0.23921568630000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <state key="normal" title="Next">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="ContinueButton:" destination="QFI-sl-4ZE" eventType="touchUpInside" id="6Df-5s-ePV"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.94117647059999998" green="0.94117647059999998" blue="0.94117647059999998" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
@@ -1377,7 +1403,7 @@
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                 </view>
             </objects>
-            <point key="canvasLocation" x="-308" y="235.99999999999994"/>
+            <point key="canvasLocation" x="-286" y="266"/>
         </scene>
     </scenes>
     <resources>

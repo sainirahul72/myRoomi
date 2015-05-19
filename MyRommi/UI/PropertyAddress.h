@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface PropertyAddress : UIViewController<UITextViewDelegate,UIGestureRecognizerDelegate>
-@property (nonatomic, strong) NSString *propertyType;
+@property (nonatomic, strong) NSMutableDictionary *propertyDictionary;
 @property (strong, nonatomic) IBOutlet UITextField *houseNumTextField;
 @property (strong, nonatomic) IBOutlet UITextField *streetTextField;
 @property (strong, nonatomic) IBOutlet UITextField *cityTextField;

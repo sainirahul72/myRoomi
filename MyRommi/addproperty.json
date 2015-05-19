@@ -1,0 +1,65 @@
+
+
+{
+    "add_house": 1,
+    "address": {
+        "city": "New Delhi",
+        "country": "India",
+        "house": "B-1-B, 43",
+        "postal_code": 110058,
+        "state": "Delhi",
+        "street": "Janakpuri"
+    },
+    "property_type": {
+        "house_type": 1
+    },
+    "user_details": {
+        "user_id": 2
+    },
+    "property_prefrences": {
+        "pref_occupation": "1,2,3",
+        "pref_food": 1,
+        "pref_smok_drink": 1,
+        "pref_guests": 0,
+        "pref_pets": 0,
+        "pref_gender": 1
+    },
+    "property_description": {
+        "prop_max_persons": 2,
+        "prop_bathrooms": 1,
+        "prop_bedrooms": 2,
+        "prop_kitchen": 1,
+        "prop_rent": 12000,
+        "prop_title": "Dummy",
+        "prop_description": "Dummy",
+        "prop_minstay": 3,
+        "prop_security_deposit": 12000,
+        "prop_instrunctions": "Dummy"
+    },
+    "room_description": {
+        "avlbl_rooms": 1,
+        "avlbl_room_is_shared": 0,
+        "avlbl_attached_bathroom": 0,
+        "avlbl_beds": 1,
+        "avlbl_balcony": 0,
+        "avlbl_rent": 6000,
+        "avlbl_security_deposit": 6000,
+        "avlbl_from": "01-09-2015"
+    }
+}
+
+Fiels Values :
+
+add_house { 0=>'Edit House', 1=>'Add House' };
+house_type { 0=>'Apartment', 1=>'House', 2=>'Bangllow', 3=>'Villa',  };
+pref_occupation { 0=>'Student', 1=>'Professional', 2=>'Enterpreneur', 3=>'Any' };
+pref_food { 0=>'Veg', 1=>'Non Veg', 2=> 'Any' };
+pref_smok_drink { 0=>'Not Allowed', 1=>'Allowed' };
+pref_guests { 0=>'Not Allowed', 1=>'Allowed' };
+pref_pets { 0=>'Not Allowed', 1=>'Allowed' };
+pref_gender { 0=> 'Male', 1=> 'Female', 2=> 'ANY'};
+
+
+Mandatory Fields : add_house, house_type, user_id, prop_bedrooms, avlbl_rooms, avlbl_room_is_shared, avlbl_security_deposit, avlbl_rent, avlbl_from
+
+
