@@ -19,6 +19,7 @@
 }
 @property (strong, nonatomic) IBOutlet MKMapView *mapView;
 @property (strong, nonatomic) IBOutlet UIToolbar *toolBar;
+@property (strong, nonatomic) IBOutlet UITextField *addressTextField;
 @property(nonatomic, retain) CLLocationManager *locationManager;
 @property (nonatomic, strong) NSMutableDictionary *propertyType;
 @end

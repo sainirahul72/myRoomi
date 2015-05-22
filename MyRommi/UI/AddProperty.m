@@ -21,6 +21,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.propertyDict = [[NSMutableDictionary alloc] initWithObjectsAndKeys:@"",@"house_type", nil];
+//    FBSDKLoginButton *loginButton = [[FBSDKLoginButton alloc] init];
+//    loginButton.center = self.view.center;
+//    [self.view addSubview:loginButton];
     // Do any additional setup after loading the view.
 }
 

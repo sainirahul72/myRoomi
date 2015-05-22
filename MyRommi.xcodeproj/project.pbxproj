@@ -514,6 +514,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -557,6 +558,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -594,8 +596,19 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/facebook-ios-sdk/FBSDKCoreKit/build/Debug-iphoneos",
+					"$(PROJECT_DIR)/facebook-ios-sdk/FBSDKLoginKit/build/Debug-iphoneos",
+					"$(PROJECT_DIR)/facebook-ios-sdk/FBSDKShareKit/build/Debug-iphoneos",
+					"/Users/RahulSaini/Documents/facebook-ios-sdk/FBSDKCoreKit/build/Debug-iphoneos",
+					"/Users/RahulSaini/Documents/facebook-ios-sdk/FBSDKLoginKit/build/Debug-iphoneos",
+					"/Users/RahulSaini/Documents/facebook-ios-sdk/FBSDKShareKit/build/Debug-iphoneos",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = MyRommi/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -610,8 +623,19 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/facebook-ios-sdk/FBSDKCoreKit/build/Debug-iphoneos",
+					"$(PROJECT_DIR)/facebook-ios-sdk/FBSDKLoginKit/build/Debug-iphoneos",
+					"$(PROJECT_DIR)/facebook-ios-sdk/FBSDKShareKit/build/Debug-iphoneos",
+					"/Users/RahulSaini/Documents/facebook-ios-sdk/FBSDKCoreKit/build/Debug-iphoneos",
+					"/Users/RahulSaini/Documents/facebook-ios-sdk/FBSDKLoginKit/build/Debug-iphoneos",
+					"/Users/RahulSaini/Documents/facebook-ios-sdk/FBSDKShareKit/build/Debug-iphoneos",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = MyRommi/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
