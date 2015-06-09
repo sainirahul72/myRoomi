@@ -15,10 +15,14 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-//    if ([FBSDKAccessToken currentAccessToken]) {
-//        // User is logged in, do work such as go to next view controller.
-//    }
-    //self.loginButton.readPermissions = @[@"public_profile", @"email", @"user_friends"];    // Do any additional setup after loading the view.
+}
+
+- (void) viewDidAppear:(BOOL)animated{
+    [super viewDidAppear:YES];
+    if ([FBSDKAccessToken currentAccessToken]) {
+        NSLog(@"%@",[FBSDKAccessToken currentAccessToken]);
+    }
+    self.loginButton.readPermissions = @[@"public_profile", @"email", @"user_friends"];
 }
 
 - (void)didReceiveMemoryWarning {

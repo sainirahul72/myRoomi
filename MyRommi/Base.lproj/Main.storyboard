@@ -1197,7 +1197,7 @@
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
-                        <outlet property="loginButton" destination="VBX-RI-W9p" id="dGX-bL-o4v"/>
+                        <outlet property="loginButton" destination="VBX-RI-W9p" id="oIj-Oe-wPr"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="P3K-bs-CNF" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1236,7 +1236,7 @@
                                 <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell userInteractionEnabled="NO" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="StaticPropertyCell" rowHeight="260" id="cam-cp-QrX">
-                                        <rect key="frame" x="0.0" y="86" width="320" height="260"/>
+                                        <rect key="frame" x="0.0" y="22" width="320" height="260"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="cam-cp-QrX" id="blw-a9-AIE">
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="260"/>
@@ -1276,7 +1276,7 @@
                                         <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="PropertyTypeCell" rowHeight="56" id="Pqx-60-2jd" customClass="PropertyTypeCell">
-                                        <rect key="frame" x="0.0" y="346" width="320" height="56"/>
+                                        <rect key="frame" x="0.0" y="282" width="320" height="56"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMinY="YES"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" contentMode="center" tableViewCell="Pqx-60-2jd" id="29N-BK-neg">
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="56"/>
