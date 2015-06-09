@@ -2,7 +2,7 @@
 //  AppDelegate.m
 //  MyRommi
 //
-//  Created by Rahul Saini on 4/12/15.
+//  Created by Rahul Saini on 12/04/15.
 //  Copyright (c) 2015 Rahul Saini. All rights reserved.
 //
 
@@ -14,7 +14,13 @@
 
 @implementation AppDelegate
 
-
+- (BOOL)application:(UIApplication *)application
+didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
+{
+    // Override point for customization after application launch.
+    [FBSDKLoginButton class];
+    return YES;
+}
 
 //- (BOOL)application:(UIApplication *)application
 //            openURL:(NSURL *)url
@@ -26,12 +32,12 @@
 //                                                       annotation:annotation];
 //}
 
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
-    return YES;
-    //[[FBSDKApplicationDelegate sharedInstance] application:application
-                                   // didFinishLaunchingWithOptions:launchOptions];
-}
+//- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+//    // Override point for customization after application launch.
+//    return YES;
+//    //[[FBSDKApplicationDelegate sharedInstance] application:application
+//                                   // didFinishLaunchingWithOptions:launchOptions];
+//}
 
 
 - (void)applicationDidBecomeActive:(UIApplication *)application {

@@ -39,6 +39,9 @@
 		B78B0A871ADD5B33008CCC97 /* MIRadioButtonGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = B78B0A861ADD5B33008CCC97 /* MIRadioButtonGroup.m */; };
 		B78B0A8D1ADD5BB6008CCC97 /* radio-off-blk.png in Resources */ = {isa = PBXBuildFile; fileRef = B78B0A8B1ADD5BB6008CCC97 /* radio-off-blk.png */; };
 		B78B0A8E1ADD5BB6008CCC97 /* radio-on-blk.png in Resources */ = {isa = PBXBuildFile; fileRef = B78B0A8C1ADD5BB6008CCC97 /* radio-on-blk.png */; };
+		B79567FB1B25C2820046A5ED /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B79567FA1B25C2820046A5ED /* HomeViewController.m */; };
+		B79567FD1B2600700046A5ED /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B79567FC1B2600700046A5ED /* FBSDKCoreKit.framework */; };
+		B79567FF1B2600B60046A5ED /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B79567FE1B2600B60046A5ED /* FBSDKLoginKit.framework */; };
 		B7AA1AB31AF510390082526A /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7AA1AB21AF510390082526A /* MapKit.framework */; };
 		B7D664F71AF4CE60006F13B2 /* add_hotelBE.png in Resources */ = {isa = PBXBuildFile; fileRef = B7D664EB1AF4CE60006F13B2 /* add_hotelBE.png */; };
 		B7D664F81AF4CE60006F13B2 /* add_hotelBE@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B7D664EC1AF4CE60006F13B2 /* add_hotelBE@2x.png */; };
@@ -122,6 +125,10 @@
 		B78B0A861ADD5B33008CCC97 /* MIRadioButtonGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MIRadioButtonGroup.m; sourceTree = "<group>"; };
 		B78B0A8B1ADD5BB6008CCC97 /* radio-off-blk.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "radio-off-blk.png"; sourceTree = "<group>"; };
 		B78B0A8C1ADD5BB6008CCC97 /* radio-on-blk.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "radio-on-blk.png"; sourceTree = "<group>"; };
+		B79567F91B25C2820046A5ED /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HomeViewController.h; path = UI/HomeViewController.h; sourceTree = "<group>"; };
+		B79567FA1B25C2820046A5ED /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HomeViewController.m; path = UI/HomeViewController.m; sourceTree = "<group>"; };
+		B79567FC1B2600700046A5ED /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKCoreKit.framework; path = ../FacebookSDK/FBSDKCoreKit.framework; sourceTree = "<group>"; };
+		B79567FE1B2600B60046A5ED /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKLoginKit.framework; path = ../FacebookSDK/FBSDKLoginKit.framework; sourceTree = "<group>"; };
 		B7AA1AB21AF510390082526A /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		B7D664EB1AF4CE60006F13B2 /* add_hotelBE.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = add_hotelBE.png; sourceTree = "<group>"; };
 		B7D664EC1AF4CE60006F13B2 /* add_hotelBE@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "add_hotelBE@2x.png"; sourceTree = "<group>"; };
@@ -155,6 +162,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				B7AA1AB31AF510390082526A /* MapKit.framework in Frameworks */,
+				B79567FD1B2600700046A5ED /* FBSDKCoreKit.framework in Frameworks */,
+				B79567FF1B2600B60046A5ED /* FBSDKLoginKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -171,6 +180,8 @@
 		B74102DA1ADA47A800711ADE = {
 			isa = PBXGroup;
 			children = (
+				B79567FE1B2600B60046A5ED /* FBSDKLoginKit.framework */,
+				B79567FC1B2600700046A5ED /* FBSDKCoreKit.framework */,
 				B7AA1AB21AF510390082526A /* MapKit.framework */,
 				B74102E51ADA47A800711ADE /* MyRommi */,
 				B74103021ADA47A900711ADE /* MyRommiTests */,
@@ -265,6 +276,8 @@
 				B741036D1ADA55BE00711ADE /* PropertyPreferences.m */,
 				B74103701ADA687200711ADE /* PropertyTypeCell.h */,
 				B74103711ADA687200711ADE /* PropertyTypeCell.m */,
+				B79567F91B25C2820046A5ED /* HomeViewController.h */,
+				B79567FA1B25C2820046A5ED /* HomeViewController.m */,
 			);
 			name = UI;
 			sourceTree = "<group>";
@@ -469,6 +482,7 @@
 				B74103681ADA554600711ADE /* AddProperty.m in Sources */,
 				B74102E91ADA47A800711ADE /* main.m in Sources */,
 				B78B0A871ADD5B33008CCC97 /* MIRadioButtonGroup.m in Sources */,
+				B79567FB1B25C2820046A5ED /* HomeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -608,6 +622,7 @@
 					"/Users/RahulSaini/Documents/facebook-ios-sdk/FBSDKLoginKit/build/Debug-iphoneos",
 					"/Users/RahulSaini/Documents/facebook-ios-sdk/FBSDKShareKit/build/Debug-iphoneos",
 					"$(PROJECT_DIR)",
+					/Users/RahulSaini/Documents/FacebookSDK,
 				);
 				INFOPLIST_FILE = MyRommi/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
@@ -635,6 +650,7 @@
 					"/Users/RahulSaini/Documents/facebook-ios-sdk/FBSDKLoginKit/build/Debug-iphoneos",
 					"/Users/RahulSaini/Documents/facebook-ios-sdk/FBSDKShareKit/build/Debug-iphoneos",
 					"$(PROJECT_DIR)",
+					/Users/RahulSaini/Documents/FacebookSDK,
 				);
 				INFOPLIST_FILE = MyRommi/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
